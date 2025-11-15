@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    font-size: large;
+}
+
+body{
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+.success:hover, .btn:hover{
+    box-shadow: 0px 4px 10px rgb(255, 110, 233); /* transition добавляем вместе с ховер*/
+    color: rgb(41, 111, 216);
+    background-color: #ff6cf3b4;
+    border: 3px solid rgb(7, 250, 214);
+    border-radius: 8px;
+}
+
+.btn{
+    /* background-color: coral; */
+    padding: 24px 48px;
+    cursor: pointer;
+    display: block; /* сделала элемент блочным */
+    margin: auto;
+}
+
+
+.success{
+    background-color: rgb(119, 235, 255);
+    color: white;
+    font-weight: bold;
+    /* padding: 20px 60px; урбали тк ниже прописано */
+    /* cursor: pointer; */
+    color: rgb(7, 250, 214);
+    background-color: rgb(164, 95, 183);
+    border: 3px solid #6b9ae5;
+    border-radius: 2px 8px;
+    transition: all 0.5s ease;
+}
+
+.acordion-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.acordion-1{
+    max-width: 400px; 
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 5%;
+    padding-top: 5%;
+    gap: 44px;
+}
+
+.acordion-2{
+    max-width: 400px; 
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    margin-inline-end: 5%;
+    padding-top: 5%;
+    gap: 44px;
+}
+
+
+.acordion-item-1, .acordion-item-2{
+    background-color: #fff;
+    border-radius: 20px;
+    /* margin-bottom: 10px; решили для акк. прописать дисплей флекс*/
+    box-shadow: 0px 2px 5px #009898;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.acordion-header{
+    background-color: #3498db;
+    color: #fff;
+    padding: 16px;
+    font-size: 18;
+    border: none; /* отменяем границу, тк она по ум-ю  */
+    outline: none; /* обводка которая может вохн при фокусе на кнопку */
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+}   
+
+.acordion-header:hover{
+    background-color: #ff6cf3b4;
+}   
+
+.acordion-header.active{
+    background-color: #16d3046c;
+} 
+
+.acordion-content-1, .acordion-content-2{
+    max-height: 0;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 15px;
+    background-color: #f698ff28;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.acordion-content-1.open{
+    padding: 15px;
+}
+
+.acordion-content-2.open{
+    padding: 15px;
+}
+
+.cat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+}
+
+.cat {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+
+.decor{
+    font-size: 36px;
+    margin: 4% 4% 4% 4%;
+}
+.decor::before{
+    content: " 🐸 ";
+}
+
+.decor::after{
+    content: " 🐸 ";
+}
+
+
+footer{
+    background-color: #76f96581;
+    color: rgb(169, 84, 254);
+    margin-top: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* font-size: 24px; */
+}
+
